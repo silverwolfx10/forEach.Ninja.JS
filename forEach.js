@@ -17,14 +17,13 @@ this.Ninja.module('$forEach', ['$curry'], function ($curry) {
    * @method $forEach
    * @param {Array} a Array de valores
    * @param {Function} b Funcao callback que sera executado para cada item do array
-   * @param {Object} c Contexto da funcao callback
    * @example
    * 
    *      $forEach([1, 2, 3], console.log.bind(console));
    * 
    */
-  function forEach(a, b, c) {
-    a.forEach(b, c || a);
+  function forEach(a, b) {
+    a.forEach(b);
   }
     
   /**
