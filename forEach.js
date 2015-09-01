@@ -24,7 +24,7 @@ this.Ninja.module('$forEach', ['$curry'], function ($curry) {
    * 
    */
   function forEach(a, b, c) {
-      a.forEach(b, c || a);
+    a.forEach(b, c || a);
   }
     
   /**
